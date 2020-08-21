@@ -1,0 +1,85 @@
+<?php
+<html>
+	<head>
+		<title>Formulario de Registro</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	</head>
+	<body>
+	<?php include "php/navbar.php"; ?>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+		<h2>Formulario de registro</h2>
+
+		<form role="form" name="registro" action="php/registro.php" method="post">
+		  
+           <div class="form-group">
+		    <label for="nombre">Nombre</label>
+		    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="&#128100; Nombre">
+		  </div>
+
+		    <div class="form-group">
+		    <label for="Apellido">Apellido</label>
+		    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="&#128100; Apellido">
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="username">Usuario</label>
+			<input type="text" class="form-control" id="username" name="username" placeholder="&#128100; Usuario">
+		  </div>
+
+		  <div class="form-group">
+		    <label for="email">Email</label>
+		    <input type="email" class="form-control" id="email" name="email" placeholder="&#9993; Correo Electronico">
+		  </div>
+
+		  <div class="form-group">
+		    <label for="password">Contrase&ntilde;a</label>
+		    <input type="password" class="form-control" id="password" name="password" placeholder="Contrase&ntilde;a">
+		  </div>
+
+		  <div class="form-group">
+		    <label for="confirm_password">Confirmar</label>
+		    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirmar Contrase&ntilde;a">
+		  </div>
+
+			<input class="btn_reset" type="reset" Value="Limpiar">
+			<input class="btn_submit" type="submit" value="Registrar">
+				</div>
+		</form>
+		</div>
+		</div>
+		</div>
+
+		<script src="js/valida_registro.js"></script>
+	</body>
+</html>
+
+<style>
+html{
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	text-align: center;
+}
+body{background-color: #a1fc92;
+}
+.container {
+	max-width: 450px;
+	height: auto;
+	background-color: #EFEFEF;
+	margin: 5% auto;
+	padding-bottom: 1rem;
+}	
+.form_top {
+	width: 100%;
+	text-align:center;
+	padding: 2rem 0 1rem;
+    border-top: solid .4rem #f70000;
+    margin-bottom: 1rem;
+  }
+.from_top h2{
+	font-weight: bold;
+	color: #CAC8C8;
+	font-size: 18px;
+}
+</style>
